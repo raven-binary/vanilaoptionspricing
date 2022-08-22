@@ -1,1 +1,19 @@
 Higher Order Greeks
+
+Vega - A measurement of Option's sensitivity to Implied Volatilies
+
+1. Higher Order Greeks that affects Vega (To manage Vega):
+- Vomma - How Vega will change relative to changes in Implied Volatility
+- Vanna - How Vega will change relative to price moves
+- Veta - How Vega changes every second
+
+2. Higher Order Greeks that affects Delta (To manage Delta):
+- Charm
+- Gamma
+- Speed
+
+3. Higher Order Greeks that affects Price (To manage Price):
+- Lambda
+
+4. Delta-Vega Hedging reduces risk by 50 %
+5. Managing Delta alone increases risk by 200 % (based on Cho and Koh)
