@@ -3,8 +3,8 @@ Higher Order Greeks
 Vega - A measurement of Option's sensitivity to Implied Volatilies
 
 1. Higher Order Greeks that affects Vega (To manage Vega):
-- Vomma - How Vega will change relative to changes in Implied Volatility
-- Vanna - How Vega will change relative to price moves
+- Vomma - How Vega will change relative to changes in Implied Volatility ; the change of vega as the volatility changes
+- Vanna - How Vega will change relative to price moves; the change of vega as the spot changes
 - Veta - How Vega changes every second
 
 2. Higher Order Greeks that affects Delta (To manage Delta):
@@ -16,4 +16,11 @@ Vega - A measurement of Option's sensitivity to Implied Volatilies
 - Lambda
 
 4. Delta-Vega Hedging reduces risk by 50 %
+
 5. Managing Delta alone increases risk by 200 % (based on Cho and Koh)
+
+Short Dated FX:
+- Have a higher volatility risk than interest rate risk
+
+Why we want Black Scholes Model for pricing:
+- We want to be conforming our pricing model to Black Scholes because the only source of risk is the underlying exchange rate.
