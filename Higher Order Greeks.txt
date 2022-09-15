@@ -24,3 +24,51 @@ Short Dated FX:
 
 Why we want Black Scholes Model for pricing:
 - We want to be conforming our pricing model to Black Scholes because the only source of risk is the underlying exchange rate.
+- The fundamentals of risk-neutral valuation is to use a replicating portfolio of assets with known prices to remove any risk.
+- Black-Scholes model is used here because it is preference free, since options can be replicated, the theoretical values do not depend on investors risk preferences.
+- Black Scholes model of option pricing still remains the only consistent one for pricing and hedging options.
+
+The cost of hedging
+- For the Black-Scholes valuation for Europen Options, closed formulae cann be easily implemented and results in pricing by plugging parameters into the pricer
+- However, the real question is that which parameters should be used to get a correct price ?
+ - What does a correct price means?
+ - This Black Scholes formula is derived so that the prices it generates for an option reflects the cost of hedging the option
+ - If the underlying and risk-free bonds are dynamically traded, the payoff of the option can be replicated.
+ - The cost of performing hedging must equal to the price of the option
+
+During the selling of an option,
+- A trader charges a premium for the risks he is bearing
+- Even in the case of Vanilla Options, the price depends on many parameters
+- Some are linked to market; this is the case of interest rates
+- Other risks such as the spot price, dividends or borrowing costs are directly related to the underlying assest itself.
+
+Financial Products
+- Financial products are unlike many other commercial products, financial instruments are produced after they are sold.
+- These products are not necessarily hedged to replication as this is typically not possible, but they are hedged to risk exposures that are tolerable
+- There are many risks to be understood, managed and priced into the ask and bid prices of structured products
+- Therefore, exact replication is not possible, but a residual of an acceptable risk is possible
+
+
+Exercise
+1. Consider a stock Alpha that can take two specific values 70 and 120 after 5 years.
+
+2. Alpha’s initial spot is equal to 100.
+
+3. The equity analysts covering this stock and working for a major
+financial institution state that there is a 60% probability that the final spot price will be 120 and a 40% probability that the final spot ends at 70.
+
+4. Then, what would be the fair price of a 5-year European at-the-money call option on Alpha? To keep things simple, let’s assume
+that interest rates and dividends are both zero.
+
+Answer:
+Probability are useless in our pricing
+
+Assumptions of Black Scholes Model:
+- The vol of the underlying asset is constant over time
+- The underlying asset can be traded continuosly, and its price S, is log-normally distributed [this means that the log-returns of S are normally distributed]
+- One can always short sell the underlying stock
+- One does not incur transaction costs or taxes
+- All securities are perfectly divisible, meaning that it is possible to buy any fraction of a share
+- One can always borrrow and lend cash at known risk-free interest rate, r, which is assumed to be constant
+- The stock pays a constant dividend yield, q
+
